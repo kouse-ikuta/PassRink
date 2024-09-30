@@ -1,0 +1,138 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    width: 310px;
+    background-color: #f0f8f5; /* 白に近い薄い黄緑 */
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #006400; /* ダークグリーン */
+}
+
+#credentialsList {
+    margin-top: 20px;
+}
+
+.credential-item {
+    background-color: #F5FFFA; /* MintCream */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #90EE90; /* LightGreen */
+}
+
+.credential-item p {
+    margin: 5px 0;
+}
+
+.send-button, .clear-button {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #9ACD32; /* YellowGreen */
+}
+
+.send-button:hover, .clear-button:hover {
+    background-color: #6B8E23; /* OliveDrab */
+}
+
+#clearAllButton {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #FF6347; /* Tomato */
+}
+
+#clearAllButton:hover {
+    background-color: #CD5C5C; /* IndianRed */
+}
+
+/* フォーム全体のデザイン */
+#textForm {
+    background-color: #F5FFFA; /* MintCream */
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #90EE90; /* LightGreen */
+}
+
+/* フォームのラベルと入力フィールド */
+#textForm label {
+    display: block;
+    margin-bottom: 5px;
+    color: #006400; /* ダークグリーン */
+}
+
+#textForm input[type="text"],
+#textForm input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #90EE90; /* LightGreen */
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+}
+
+/* フォームの送信ボタン */
+#sendButton {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #9ACD32; /* YellowGreen */
+    cursor: pointer;
+}
+
+#sendButton:hover {
+    background-color: #6B8E23; /* OliveDrab */
+}
+
+/* 自動入力ボタンのスタイル */
+#inputButton {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #9ACD32; /* YellowGreen */
+}
+
+#inputButton:hover {
+    background-color: #6B8E23; /* OliveDrab */
+}
+
+/* 手入力ボタン */
+#showFormButton {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #4682B4; /* SteelBlue */
+}
+
+#showFormButton:hover {
+    background-color: #4169E1; /* RoyalBlue */
+}

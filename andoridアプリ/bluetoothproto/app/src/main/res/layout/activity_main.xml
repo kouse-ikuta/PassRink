@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="パスワードマネージャーは停止しています"
+        android:textSize="18sp"
+        android:textAlignment="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/receivedMessageTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="まだパソコンと接続されていません"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:scrollbars="vertical" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/startServerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="パスワードマネージャーを開始する" />
+
+    <Button
+        android:id="@+id/sendMessageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="メッセージを送信する" />
+
+    <Button
+        android:id="@+id/restartServerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="パスワードマネージャーを再起動する" />
+
+    <Button
+        android:id="@+id/displayDataButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="データ表示" />
+
+    <Button
+        android:id="@+id/deleteDataButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="データを削除"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

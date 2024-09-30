@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Bluetooth add",
+    "version": "1.0",
+    "description": "JavaScriptからC#を通じてAndroidとBluetooth通信を行います。",
+    "permissions": [
+        "nativeMessaging",
+        "storage",
+        "tabs",
+        "activeTab",
+        "scripting"
+    ],
+    "action": { 
+        "default_title": "Bluetooth add",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content_script.js"
+            ] 
+        }
+    ],
+    "host_permissions": [
+        "*://*/*" 
+    ]
+}

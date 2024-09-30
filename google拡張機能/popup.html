@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>Password Manager</title>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>PassRink</h1>
+
+    <div id="deviceList">
+        <!-- デバイスリストがここに表示されます -->
+    </div>
+
+    <div id="responseArea">
+        <!-- 選択されたMACアドレスがここに表示されます -->
+    </div>
+    <!-- URL, ID, パスワード入力フォーム -->
+    <button id="showFormButton">情報を手入力・送信する</button> <!-- 手入力ボタン -->
+    <form id="textForm" style="display: none;"> <!-- 最初は非表示 -->
+        <label for="urlInput">URL:</label>
+        <input type="text" id="urlInput" name="url" placeholder="URLを入力" required>
+
+        <label for="idInput">ID:</label>
+        <input type="text" id="idInput" name="id" placeholder="IDを入力" required>
+
+        <label for="passInput">パスワード:</label>
+        <input type="password" id="passInput" name="password" placeholder="パスワードを入力" required>
+
+        <button type="button" id="sendButton">送信</button>
+    </form>
+
+    <!-- 資格情報リスト表示 -->
+    <div id="credentialsList">
+        <!-- 保存されたデータがここに表示されます -->
+    </div>
+    <button id="clearAllButton">すべてクリア</button>
+    <!--
+    <button id="testMessageButton">テストメッセージを送信</button>
+    -->
+    <button id="inputButton">自動入力</button>
+
+    <div id="responseArea"></div> <!-- 返信を表示するエリア -->
+</body>
+
+</html>

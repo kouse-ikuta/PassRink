@@ -1,0 +1,9 @@
+{
+    "name": "com.example.bluetooth_bridge",
+    "description": "Bluetooth Bridge Native Messaging Host",
+    "path": "ここにexeファイルの絶対パスを入力",
+    "type": "stdio",
+    "allowed_origins": [
+        "chrome-extension://ここに拡張機能のIDを入力/"
+    ]
+}
